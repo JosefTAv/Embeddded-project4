@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;VGAController/frames.bin&apos;" deleteContents="false" description="Delete resource &apos;VGAController/frames.bin&apos;" element1="/VGAController/frames.bin" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1672745972891"/>&#x0A;<refactoring comment="Delete resource &apos;VGAController/frames.bin&apos;" deleteContents="false" description="Delete resource &apos;VGAController/frames.bin&apos;" element1="/VGAController/frames.bin" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1672746934760"/>
+</session>

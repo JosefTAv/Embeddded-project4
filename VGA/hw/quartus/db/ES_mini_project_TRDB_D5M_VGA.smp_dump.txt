@@ -1,0 +1,22 @@
+
+State Machine - |DE0_Nano_SoC_TRDB_D5M_VGA_top_level|soc_system:u0|vga_interface:vga_controller_0|vga_fsm:vga_fsm_inst|w_state
+Name w_state.S_ERROR w_state.S_BUSY w_state.S_IDLE w_state.S_RESET 
+w_state.S_RESET 0 0 0 0 
+w_state.S_IDLE 0 0 1 1 
+w_state.S_BUSY 0 1 0 1 
+w_state.S_ERROR 1 0 0 1 
+
+State Machine - |DE0_Nano_SoC_TRDB_D5M_VGA_top_level|soc_system:u0|soc_system_nios2_gen2_0:nios2_gen2_0|soc_system_nios2_gen2_0_cpu:cpu|soc_system_nios2_gen2_0_cpu_nios2_oci:the_soc_system_nios2_gen2_0_cpu_nios2_oci|soc_system_nios2_gen2_0_cpu_debug_slave_wrapper:the_soc_system_nios2_gen2_0_cpu_debug_slave_wrapper|soc_system_nios2_gen2_0_cpu_debug_slave_tck:the_soc_system_nios2_gen2_0_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |DE0_Nano_SoC_TRDB_D5M_VGA_top_level|soc_system:u0|fifo_interface:dma_fifo_0|fifo_fsm:fifo_fsm_inst|w_state
+Name w_state.S_FETCH w_state.S_REQUEST w_state.S_WAIT 
+w_state.S_WAIT 0 0 0 
+w_state.S_REQUEST 0 1 1 
+w_state.S_FETCH 1 0 1 

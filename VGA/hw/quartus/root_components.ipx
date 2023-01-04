@@ -1,0 +1,41 @@
+<library>
+  <message>Loading now from components.ipx</message>
+
+
+  <!-- Relative to your .sopc file -->
+  <path path="$$IP_PROJECTDIR/ip/**/*" >
+    <tag2 key="COMPONENT_IN_PROJECT" value="true" />
+  </path>
+  <path path="$$IP_PROJECTDIR/*" >
+    <tag2 key="COMPONENT_IN_PROJECT" value="true" />
+  </path>
+  <path path="$$IP_PROJECTDIR/*/*" >
+    <tag2 key="COMPONENT_IN_PROJECT" value="true" />
+  </path>
+
+  <!-- Usually: $HOME/.altera.quartus/ip/(version) -->
+  <path path="$$IP_USERDIR/**/*" />
+  
+  <!-- Relative to your .qsf file -->
+  <path path="$$QUARTUS_IP_PROJECTDIR/*" />
+  
+  <!-- User defined inside the .qsf file -->
+  <path path="$$QUARTUS_IP_USERDIR/*" />
+  
+  <!-- User defined inside the .qsf file -->
+  <path path="$$QUARTUS_IP_GLOBALDIR/*" />
+
+  <!-- Usually: c:/altera/(version)/ip -->
+  <path path="$$IP_GLOBALDIR/**/*" />
+
+  <!-- Usually: c:/altera/ip -->
+  <path path="$$IP_GLOBALDIR/../../ip/**/*" />
+
+  <!-- Relative to quartus install -->
+  <path path="$QUARTUS_ROOTDIR/sopc_builder/**/*" />
+  <path path="$QUARTUS_ROOTDIR/common/librarian/factories/**/*" />
+
+  <!-- Additional comma-separated list of locations -->
+  <path path="$IP_IPX_PATH" />
+</library>
+
